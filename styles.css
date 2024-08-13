@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa; /* Light background for the entire page */
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff; /* White background for the game container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin-bottom: 20px;
+    background-color: #b2ebf2; /* Light teal background for the board */
+    padding: 10px; /* Padding around the grid */
+    border-radius: 10px; /* Rounded corners for the board */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: #80deea; /* Light blue for the cells */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffffff;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.3s;
+}
+
+.cell:hover {
+    background: #4dd0e1; /* Darker blue on hover */
+}
+
+#reset {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #00796b; /* Green for reset button */
+    color: #ffffff;
+    transition: background 0.3s;
+}
+
+#reset:hover {
+    background: #004d40; /* Darker green on hover */
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #d32f2f; /* Red for message text */
+}
